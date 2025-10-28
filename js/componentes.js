@@ -107,6 +107,7 @@ let COMPONENT_MASTER_MOSTRAR_INFORMACION_PRESENTACION = (maestria = {}) => {
   });
 };
 
+<<<<<<< Updated upstream
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 let COMPONENT_DOBLE_TITULACION = (maestria = {}) => {
@@ -180,6 +181,34 @@ let COMPONENT_DOBLE_TITULACION = (maestria = {}) => {
       )
     )
     .append(c_div_row);
+=======
+let COMPONENT_NAVBAR = () => {
+  return `
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white text-light navbar-light shadow sticky-top p-0" id="home">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5 xos-temblor">
+            <h2 class="m-0"><img width="40" alt="" id="logoBarra" /></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4 " data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active text-dark xos-temblor">Home</a>
+                <a href="maestrias.html" class="nav-item nav-link active text-dark xos-temblor">Maestr&iacute;as Oficiales en
+                    Espa&ntilde;a</a>
+              
+                <a href="about.html" class="nav-item nav-link xos-temblor">¿Quiénes Somos?</a>
+                <a href="https://www.fercoadvancededucation.com/landing"
+                    class="nav-item nav-link xos-temblor">Contáctos</a>
+            </div>
+            <!--  <a href="" class="btn btn-dark py-4 px-lg-5 d-none d-lg-block">Join Now<
+                    class="fa fa-arrow-right ms-3"></i></a> -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+  `;
+>>>>>>> Stashed changes
 };
 
 /**
