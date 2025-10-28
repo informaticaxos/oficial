@@ -1,0 +1,673 @@
+/********** Template CSS **********/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap");
+
+:root {
+  --primary: #000000;
+  --light: #f0fbfc;
+  --dark: #181d38;
+}
+
+.fw-medium {
+  font-weight: 600 !important;
+}
+
+.fw-semi-bold {
+  font-weight: 700 !important;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
+
+/*** Spinner ***/
+
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+/*** Button ***/
+
+.btn {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+  color: #ffffff;
+}
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 0px;
+}
+
+/*** Navbar ***/
+
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin-right: 30px;
+  padding: 25px 0;
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+
+  .navbar-light .navbar-nav {
+    border-top: 1px solid #eeeeee;
+  }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+  height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+  top: -100px;
+  transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  .navbar .dropdown-menu.fade-down {
+    top: 100%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    top: 100%;
+    transform: rotateX(0deg);
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 1;
+  }
+}
+
+/*** Header carousel ***/
+
+@media (max-width: 768px) {
+  .header-carousel .owl-carousel-item {
+    position: relative;
+    min-height: 500px;
+  }
+
+  .header-carousel .owl-carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.header-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+  margin: 7px 0;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+  font-size: 22px;
+  transition: 0.5s;
+}
+
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.page-header {
+  background: linear-gradient(rgba(24, 29, 56, 0.7), rgba(24, 29, 56, 0.7)),
+    url(../img/exito.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-header-inner {
+  background: rgba(15, 23, 43, 0.7);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--light);
+}
+
+/*** Section Title ***/
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 80px);
+  height: 2px;
+  top: 4px;
+  left: -40px;
+  background: var(--primary);
+  z-index: -1;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: calc(100% + 120px);
+  height: 2px;
+  bottom: 5px;
+  left: -60px;
+  background: var(--primary);
+  z-index: -1;
+}
+
+.section-title.text-start::before {
+  width: calc(100% + 40px);
+  left: 0;
+}
+
+.section-title.text-start::after {
+  width: calc(100% + 60px);
+  left: 0;
+}
+
+/*** Service ***/
+
+.service-item {
+  background: var(--light);
+  transition: 0.5s;
+}
+
+.service-item:hover {
+  margin-top: -10px;
+  background: var(--primary);
+}
+
+.service-item * {
+  transition: 0.5s;
+}
+
+.service-item:hover * {
+  color: var(--light) !important;
+}
+
+/*** Categories & Courses ***/
+
+.category img,
+.course-item img {
+  transition: 0.5s;
+}
+
+.category a:hover img,
+.course-item:hover img {
+  transform: scale(1.1);
+}
+
+/*** Team ***/
+
+.team-item img {
+  transition: 0.5s;
+}
+
+.team-item:hover img {
+  transform: scale(1.1);
+}
+
+/*** Testimonial ***/
+
+.testimonial-carousel::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 1;
+}
+
+.testimonial-carousel::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .testimonial-carousel::before,
+  .testimonial-carousel::after {
+    width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonial-carousel::before,
+  .testimonial-carousel::after {
+    width: 300px;
+  }
+}
+
+.testimonial-carousel .owl-item .testimonial-text,
+.testimonial-carousel .owl-item.center .testimonial-text * {
+  transition: 0.5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text {
+  background: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text * {
+  color: #ffffff !important;
+}
+
+.testimonial-carousel .owl-dots {
+  margin-top: 24px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #cccccc;
+  transition: 0.5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+/*** Footer ***/
+
+.footer .btn.btn-social {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  font-weight: normal;
+  border: 1px solid #ffffff;
+  border-radius: 35px;
+  transition: 0.3s;
+}
+
+.footer .btn.btn-social:hover {
+  color: var(--primary);
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, 0.1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
+
+.footer .footer-menu a {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .footer-menu a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
+.efecto-transparente {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+text-justify {
+  text-align: justify;
+}
+
+.xos-hover-1 {
+  color: #011b2b;
+}
+
+.xos-hover-2 {
+  color: #ffffff;
+}
+
+.xos-hover-1:hover {
+  color: rgb(147, 159, 182);
+}
+
+.xos-hover-2:hover {
+  color: rgb(147, 159, 182);
+}
+
+.xos-hover-3:hover {
+  color: rgb(147, 159, 182);
+}
+
+.ferco {
+  animation: fadeIn 3s;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.xos-bg-white {
+  background-color: #ffffff;
+}
+
+.xos-hover:hover {
+  color: orange;
+}
+
+.xos-hover {
+  color: rgb(255, 232, 188);
+}
+
+/* .xos-hover-4 {
+  color: rgb(250, 252, 147);
+} */
+/* .xos-hover-4:hover {
+  color: rgb(3, 23, 61);
+  background-color: rgb(245, 159, 1);
+  border-radius: 15px;
+} */
+.xos-input-sinborde {
+  border: 0;
+}
+
+/*** ESTILOS BOTÓN SLIDE BOTTOM ***/
+.xos-hover-4 {
+  /* background: #fff; */ /* color de fondo */
+  color: rgb(227, 230, 252); /* color de fuente */
+  border: 2px solid rgb(245, 159, 1); /* tamaño y color de borde */
+  padding: 16px 20px;
+  /* border-radius: 3px; */ /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  border: 0;
+}
+.xos-hover-4:hover {
+  /* color: #fff;  */ /* color de fuente hover */
+  color: rgb(1, 30, 85);
+  border-radius: 5px;
+}
+.xos-hover-4::after {
+  content: "";
+
+  background: rgb(255, 255, 255); /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  /* display: block; */
+  left: 0;
+  right: 0;
+  top: 100%;
+  bottom: -100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  /* border-radius: 15px; */
+}
+.xos-hover-4:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.xos-temblor {
+  /* width:332px;
+  height:30px; */
+}
+.xos-temblor:hover {
+  /* -webkit-animation: tiembla 0.1s infinite; */
+  -webkit-animation: tiembla 0.1s;
+  cursor: grabbing;
+}
+@-webkit-keyframes tiembla {
+  0% {
+    -webkit-transform: rotateZ(-5deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(0deg) scale(0.8);
+  }
+  100% {
+    -webkit-transform: rotateZ(5deg);
+  }
+}
+
+.xos-sombra-1 {
+  /* box-shadow: 5px 5px 0; */ /* Sombra sin desenfoque */
+  /* box-shadow: 5px 5px 2px; */ /* Sombra con ligero desenfoque */
+  /*  box-shadow: 5px 5px 10px ;  */ /* Sombra desenfocada */
+  box-shadow: 10px 10px 40px; /* Sombra con un desenfoque casi disipado */
+}
+.xos-sombra-2 {
+  /* box-shadow: 5px 5px 0;  */ /* Sombra sin desenfoque */
+  /* box-shadow: 5px 5px 2px;  */ /* Sombra con ligero desenfoque */
+  /* box-shadow: 5px 5px 10px; */ /* Sombra desenfocada */
+  box-shadow: 2px 2px 20px; /* Sombra con un desenfoque casi disipado */
+}
+
+.xos-content-center {
+  align-items: center;
+  display: flex;
+  font-size: small;
+  /* height: 100px; */
+  justify-content: center;
+  /*  width: 200px; */
+}
+
+.xos-text-small {
+  font-size: 1%;
+}
+
+.redimension-botones {
+  background-color: rgba(19, 30, 58, 0.7);
+  align-items: center;
+  display: block;
+  font-size: small;
+  /* height: 100px; */
+  justify-content: center;
+  /*  width: 200px; */
+  padding-top: 50%;
+  border-bottom: 3px solid rgb(235, 235, 235);
+}
+
+.xos-boton-modalidad-ingreso-master {
+  /* background-color: #000000; */
+  border-width: 10px;
+}
+
+.pintar {
+  color: #00ff00;
+}
+
+/*#floating-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  border-radius: 25px;
+  background-color: #25d366;
+}*/
+
+.floating-button {
+  position: fixed;
+  display: none;
+  left: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
+
+
+.redondear-card {
+  /* border-radius: 25px,0px,25px,25px; */
+  border-radius: 30% 30% 0% 0%; 
+}
+
+/** INICIO  :: DISEÑO BOTON BLOTANTE*/
+.btn-flotante {
+	font-size: 30px; /* Cambiar el tamaño de la tipografia */
+	/* text-transform: uppercase; */ /* Texto en mayusculas */
+	font-weight: bold; /* Fuente en negrita o bold */
+	color: #ffffff; /* Color del texto */
+	border-radius: 5px; /* Borde del boton */
+	letter-spacing: 2px; /* Espacio entre letras */
+	background-color: 		#25d366; /* Color de fondo */
+	padding: 18px 30px; /* Relleno del boton */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+  border-radius: 50px;
+}
+.btn-flotante:hover {
+	background-color: #dcf8c6; /* Color de fondo al pasar el cursor */
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px) {
+ 	.btn-flotante {
+		font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+	}
+} 
+/** FIN  :: DISEÑO BOTON BLOTANTE*/
