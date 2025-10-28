@@ -2,67 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>eLEARNING - eLearning HTML Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <script src="js/componentes.js"></script>
+    <script>document.write(COMPONENT_HEAD());</script>
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-dark" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
+    <div id="spinner"></div>
     <!-- Spinner End -->
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white text-light navbar-light shadow sticky-top p-0" id="home">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0"><img src="img/ferco_logo.png" width="40" alt="" /></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4 " data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active text-dark">Home</a>
-                <a href="maestrias.html" class="nav-item nav-link active text-dark">Maestrías Oficiales en España</a>
-                <a href="about.html" class="nav-item nav-link">¿Quiénes Somos?</a>
-                <a href="https://www.fercoadvancededucation.com/landing" class="nav-item nav-link">Contáctos</a>
-            </div>
-            <!--  <a href="" class="btn btn-dark py-4 px-lg-5 d-none d-lg-block">Join Now<
-                    class="fa fa-arrow-right ms-3"></i></a> -->
-        </div>
-    </nav>
+    <div id="navbar"></div>
+    <script>document.getElementById('navbar').innerHTML = COMPONENT_NAVBAR();</script>
     <!-- Navbar End -->
 
 
@@ -223,11 +175,11 @@
                                 para hacer que sus recursos generen beneficios a personas que no necesariamente
                                 establecen una relación de consumo. Ejemplo de este proceso :
 
-                                <ul>
-                                    <li>creación de cursos y talleres educativos para transmitir el conocimiento que
-                                        produce;
-                                    </li>
-                                </ul>
+                            <ul>
+                                <li>creación de cursos y talleres educativos para transmitir el conocimiento que
+                                    produce;
+                                </li>
+                            </ul>
 
                             </p>
                         </div>
@@ -366,76 +318,19 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-12 col-md-6">
-                    <h4 class="text-white mb-3">Contactos</h4>
-                    <p class="mb-2">
-                        <i class="fa fa-map-marker-alt me-3"></i>Barcelona, España <br>
-                        <i class="fa fa-phone-alt me-3"></i><a href="tel:34654704710" target="_blank"
-                            class="text-light">+34 655 25 56 95</a>
-                    </p>
-                    <p class="mb-2">
-
-                    </p>
-                    <p class="mb-2">
-
-                        <i class="fa fa-map-marker-alt me-3"></i>Cuenca, Ecuador <br>
-                        <i class="fa fa-phone-alt me-3"></i><a href="tel:593995113549" target="_blank"
-                            class="text-light">+593 99 511 3549</a>
-                    </p>
-                    <p class="mb-2">
-                        <hr>
-                    </p>
-
-
-                    <p class="mb-2">
-                        <i class="fa fa-envelope me-3"></i>info.latinoamerica@fercoadvancededucation.com
-                    </p>
-
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social"
-                            href="https://www.instagram.com/fercoadvancededucation" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/fercoededucation/"
-                            target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social"
-                            href="https://api.whatsapp.com/send?phone=34678791332&text=." target="_blank"><i
-                                class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container" id="contactos">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy;
-                        <a class="border-bottom" href="#"> fercoadvancededucation.com </a>, All Right Reserved. Designed
-                        By
-                        <a class="border-bottom" href="https://htmlcodex.com">Informática XOS</a><br /><br />
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="footer"></div>
+    <script src="js/componentes.js"></script>
     <!-- Footer End -->
 
- <!-- INICIO BOTON FLOTANTE -->
- <a href="https://wa.me/34678791332?text=Hola!%20visitaba%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n!%0AMi%20nombre%20es%20:%20"
- target="_blank" 
- class="btn-flotante"
- id="btn-flotante"
- >
-    <i class="fab fa-whatsapp"></i> Escríbenos
-</a>
-<!-- FIN BOTON FLOTANTE -->
+    <!-- INICIO BOTON FLOTANTE -->
+    <a href="https://wa.me/34678791332?text=Hola!%20visitaba%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n!%0AMi%20nombre%20es%20:%20"
+        target="_blank" class="btn-flotante" id="btn-flotante">
+        <i class="fab fa-whatsapp"></i> Escríbenos
+    </a>
+    <!-- FIN BOTON FLOTANTE -->
 
     <!-- Back to Top -->
-   <!--  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!--  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
  -->
 
     <!-- JavaScript Libraries -->
