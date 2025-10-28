@@ -2,56 +2,23 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8" />
-    <title>FERCO Advanced Education</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
-    <link href="img/favicon.ico" rel="icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
-        rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap"
-        rel="stylesheet">
-
+    <script src="js/componentes.js"></script>
+    <script>document.write(COMPONENT_HEAD());</script>
 </head>
 
 <body>
+
     <div id="spinner"></div>
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white text-light navbar-light shadow sticky-top p-0" id="home">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5 xos-temblor">
-            <h2 class="m-0"><img width="40" alt="" id="logoBarra" /></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4 " data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active text-dark xos-temblor">Home</a>
-                <a href="maestrias.html" class="nav-item nav-link active text-dark xos-temblor">Maestrías Oficiales en
-                    España</a>
-                <a href="about.html" class="nav-item nav-link xos-temblor">Campus</a>
-                <a href="about.html" class="nav-item nav-link xos-temblor">¿Quiénes Somos?</a>
-                <a href="https://www.fercoadvancededucation.com/landing"
-                    class="nav-item nav-link xos-temblor">Contáctos</a>
-            </div>
-            <!--  <a href="" class="btn btn-dark py-4 px-lg-5 d-none d-lg-block">Join Now<
-                    class="fa fa-arrow-right ms-3"></i></a> -->
-        </div>
-    </nav>
-    <!-- Navbar End -->
+
+
+    <div id="navbar"></div>
+    <script>document.getElementById('navbar').innerHTML = COMPONENT_NAVBAR();</script>
+
+
+
+
+
+
     <!-- inicio nuevo carrusel -->
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
         <!--  Indicators/dots -->
@@ -92,17 +59,7 @@
                     </p> -->
                 </div>
             </div>
-            <!-- <div class="carousel-item">
-                <img src="img/negociosinternacionales.jpg" alt="New York" class="d-block w-100">
-                <div class="carousel-caption efecto-transparente p-3">
-                    <p class="fs-5 fw-bold text-dark">
-                        Obtención del Nº identificacion del Extranjero (NIE)
-                        <p>
-                        <a href="https://fercoadvancededucation.com/caemfi/" target="_blank" class="btn btn-dark">Leer
-                            más</a>
-                    </p>    
-                </div>
-            </div> -->
+
             <div class="carousel-item">
                 <img src="https://fercoadvancededucation.com/data/202311271702webpage/carousel/carousel3.PNG"
                     alt="New York" class="d-block w-100">
@@ -128,65 +85,7 @@
     </div>
     <!-- fin nuevo carrusel -->
 
-    <!-- Carousel Start -->
-    <!-- <div class="container-fluid p-0 mb-5">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(24, 29, 56, 0.7)">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h1 class="display-3 text-white animated slideInDown">
-                                    Másteres Universitarios de EUNCET BUSINESS SCHOOL - UPC
-                                </h1>
-                                <p class="fs-5 text-white mb-4 pb-2">
-                                    Con el
-                                    <b class="text-light">MBA Oficial en Dirección Estratégica</b> obtendrás una doble
-                                    titulación internacional que te preparará para una toma de decisiones en el ámbito
-                                    de la dirección de Empresas. <br /><br /> Con el
-                                    <b class="text-light">Máster Oficial en Dirección de Marketing</b> en comunicación
-                                    Estratégica el estudiante recibirá las herramientas y conocimientos necesarios para
-                                    dirigir el departamento de Marketing.
-                                </p>
-                                <a href="https://fercoadvancededucation.com/euncetform/"
-                                    class="btn btn-dark py-md-3 px-md-5 me-3 animated slideInLeft">Leer más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-2.jpg" alt="" />
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(24, 29, 56, 0.7)">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                                <h1 class="display-3 text-white animated slideInDown">
-                                    Semanas Internacionales
-                                </h1>
-                                <p class="fs-5 text-white mb-4 pb-2">
-                                    Curso con diploma de alta Especialización en MERCADOS Y FINANZAS INTERNACIONALES
-                                </p>
-                                <a href="https://fercoadvancededucation.com/caemfi/"
-                                    class="btn btn-dark py-md-3 px-md-5 me-3 animated slideInLeft">Ver más</a>
-                                <br /><br />
-                                <hr class="bg-light" />
-                                <p class="fs-5 text-white mb-4 pb-2">
-                                    Curso con diploma de alta Especialización en MARKETING DIGITAL & E-COMMERCE
-                                </p>
-                                <a href="https://fercoadvancededucation.com/caemde/"
-                                    class="btn btn-dark py-md-3 px-md-5 animated slideInRight">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Carousel End -->
+
     <!-- Service Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -210,11 +109,11 @@
                             <i class="fa fa-2x fa-globe text-dark mb-4"></i>
                             <p class="mb-3 fs-6 fw-bold text-dark">CLASES CON MODALIDADES A TU COMODIDAD</p>
                             <p class="lh-base ">
-                                <ul>
-                                    <li class="text-start ">Clases Presencial</li>
-                                    <li class="text-start ">Semi-Presencial</li>
-                                    <li class="text-start ">y Online</li>
-                                </ul>
+                            <ul>
+                                <li class="text-start ">Clases Presencial</li>
+                                <li class="text-start ">Semi-Presencial</li>
+                                <li class="text-start ">y Online</li>
+                            </ul>
                             </p>
                         </div>
                     </div>
@@ -311,12 +210,6 @@
                     Colaborador Oficial
                 </h3>
             </div>
-            <!--   <div class="col-sm-6"> <b>
-                    <h3>
-                        Colaborador Oficial
-                    </h3>
-                </b>
-            </div> -->
         </div>
     </div>
     <br>
@@ -329,12 +222,12 @@
                     <p class="mb-3  text-dark"><img
                             src="https://fercoadvancededucation.com/data/202311271702webpage/logos/001.jpg" alt=""></p>
                     <p class="text-justify " style="text-align: justify;">
-                        <p class="h3">
-                            <b>Nº 1</b>
-                        </p>
-                        <p>Reconocida como una de las 50 mejores Universidades de Europa según el Ranking
-                            Internacional de Ed Universal 2022
-                        </p>
+                    <p class="h3">
+                        <b>Nº 1</b>
+                    </p>
+                    <p>Reconocida como una de las 50 mejores Universidades de Europa según el Ranking
+                        Internacional de Ed Universal 2022
+                    </p>
                     </p>
                 </div>
             </div>
@@ -390,444 +283,15 @@
     <!-- Service End -->
 
 
-    <!-- INICIO:RANKING -->
-    <!--   <div class="container-fluid">
-        <img src="img/ranking/Ranking UE_act_-2.png" width="100%">
-        <img src="img/ranking/Ranking UE_act_-3.png" width="100%">
-        <img src="img/ranking/Ranking UE_act_-4.png" width="100%">
-        <img src="img/ranking/Ranking UE_act_-5.png" width="100%">
-        <img src="img/ranking/Ranking UE_act_-6.png" width="100%">
-        <img src="img/ranking/Ranking UE_act_-7.png" width="100%">
-    </div> -->
-    <!-- FIN:RANKING -->
-
-
-    <!-- About Start -->
-    <div class="container-xxl py-5" id="nosotros">
-        <div class="container">
-            <div class="row g-5">
-                <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt="" style="object-fit: cover;">
-                    </div>
-                </div> -->
-                <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-dark pe-3">
-                        ¿Quiénes Somos?
-                    </h6>
-                    <h1 class="mb-4">Bienvenido a FERCO Advanced Education</h1>
-
-                    <p class="mb-4">
-                        Facilitamos oportunidades de formacion académica a estudiantes universitarios y profesionales latinos, apoyando al complemente de sus conocimientos adquiridos y mejorando la adquicisión de competencias para su vida profesional.
-                    </p>
-
-                    <p class="mb-4"></p>
-                    <div class="row gy-2 gx-4 mb-4">
-                        <div class="col-sm-6">
-                            <p class="mb-0">
-                                <i class="fa fa-arrow-right text-dark me-2"></i>Intercambio de Experiencias con profesionales de todo el mundo.
-                            </p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0">
-                                <i class="fa fa-arrow-right text-dark me-2"></i>Clases en modalidades que se ajustan a tu comodidad
-                            </p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0">
-                                <i class="fa fa-euro"></i>
-                                <i class="fa fa-arrow-right text-dark me-2"></i>Certificaciones Internacionales
-                            </p>
-                        </div>                     
-                    </div>         
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-    <!-- Categories Start -->
-    <!-- <div class="container-xxl py-5 category">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
-                <h1 class="mb-5">Courses Categories</h1>
-            </div>
-            <div class="row g-3">
-                <div class="col-lg-7 col-md-6">
-                    <div class="row g-3">
-                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-1.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
-                                    style="margin: 1px;">
-                                    <h5 class="m-0">Web Design</h5>
-                                    <small class="text-primary">49 Courses</small>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-2.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
-                                    style="margin: 1px;">
-                                    <h5 class="m-0">Graphic Design</h5>
-                                    <small class="text-primary">49 Courses</small>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-3.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
-                                    style="margin: 1px;">
-                                    <h5 class="m-0">Video Editing</h5>
-                                    <small class="text-primary">49 Courses</small>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt=""
-                            style="object-fit: cover;">
-                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
-                            style="margin:  1px;">
-                            <h5 class="m-0">Online Marketing</h5>
-                            <small class="text-primary">49 Courses</small>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Categories Start -->
-    <!-- Courses Start -->
-    <!-- <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
-                <h1 class="mb-5">Popular Courses</h1>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-1.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
-                                    style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
-                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30
-                                Students</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-2.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
-                                    style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
-                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30
-                                Students</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-3.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
-                                    style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
-                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30
-                                Students</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Courses End -->
-    <!-- Team Start -->
-    <!-- <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
-                <h1 class="mb-5">Expert Instructors</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item bg-light">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Instructor Name</h5>
-                            <small>Designation</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Team End -->
-    <!-- Testimonial Start -->
-    <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="mb-5">Our Students Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg"
-                        style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                            eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg"
-                        style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                            eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg"
-                        style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                            eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg"
-                        style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
-                            eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Testimonial End -->
-
-    <!--  <a href="#" class="btn-flotante">
-        <img src="https://fercoadvancededucation.com/data/202311271702webpage/logos/whatsapp.svg"
-            alt="whatsapp busines logo" />
-    </a> -->
-    <a class='flotante' href='#'><img src='boton-flotante.png' border="0" /></a>
-
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-12 col-md-6">
-                    <h4 class="text-white mb-3">Contactos</h4>
-                    <p class="mb-2">
-                        <i class="fa fa-map-marker-alt me-3"></i>Barcelona, España <br>
-                        <i class="fa fa-phone-alt me-3"></i><a href="tel:34654704710" target="_blank"
-                            class="text-light">+34 678 79 13 32</a>
-                    </p>
-                    <p class="mb-2">
-                    </p>
-                    <p class="mb-2">
-
-                        <i class="fa fa-map-marker-alt me-3"></i>Cuenca, Ecuador <br>
-                        <i class="fa fa-phone-alt me-3"></i><a href="tel:593995113549" target="_blank"
-                            class="text-light">+593 99 511 3549</a>
-                    </p>
-                    <p class="mb-2">
-                        <hr>
-                    </p>
-                    <p class="mb-2">
-                        <i class="fa fa-envelope me-3"></i>info.latinoamerica@fercoadvancededucation.com
-                    </p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social"
-                            href="https://www.instagram.com/fercoadvancededucation" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/fercoededucation/"
-                            target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social"
-                            href="https://api.whatsapp.com/send?phone=34678791332&text=." target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container" id="contactos">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy;
-                        <a class="border-bottom" href="#"> fercoadvancededucation.com </a>, All Right Reserved.
-                        Designed
-                        By
-                        <a class="border-bottom" href="https://htmlcodex.com">Informática XOS</a><br /><br />
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="footer"></div>
+    <script src="js/componentes.js"></script>
+    <script>document.write(COMPONENT_FOOTER());</script>
     <!-- Footer End -->
 
     <!-- INICIO BOTON FLOTANTE -->
     <a href="https://wa.me/34678791332?text=Hola!%20visitaba%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n!%0AMi%20nombre%20es%20:%20"
-     target="_blank" 
-     class="btn-flotante"
-     id="btn-flotante"
-     >
+        target="_blank" class="btn-flotante" id="btn-flotante">
         <i class="fab fa-whatsapp"></i> Escríbenos
     </a>
     <!-- FIN BOTON FLOTANTE -->
@@ -863,6 +327,7 @@
 
     <!-- Template Javascript -->
 
+    <script src="js/componentes.js"></script>
     <script src="js/variables.js"></script>
     <script src="js/index.js"></script>
     <script src="js/main.js"></script>
