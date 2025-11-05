@@ -36,7 +36,7 @@ let COMPONENT_NAVBAR = () => {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active text-dark xos-temblor">Home</a>
-                <a href="maestrias.html" class="nav-item nav-link active text-dark xos-temblor">Maestrías Oficiales en
+                <a href="maestrias.html" class="nav-item nav-link active text-dark xos-temblor">MaestrIas Oficiales en
                     España</a>
               
                 <a href="about.html" class="nav-item nav-link xos-temblor">¿Quiénes Somos?</a>
