@@ -1,6 +1,5 @@
 let COMPONENT_HEAD = () => {
-  return `
-    <meta charset="utf-8" />
+  return `   
     <title>FERCO Advanced Education</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
