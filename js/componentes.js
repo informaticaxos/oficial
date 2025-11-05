@@ -35,10 +35,9 @@ let COMPONENT_NAVBAR = () => {
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active text-dark xos-temblor">Homesssssss</a>
-                <a href="maestrias.html" class="nav-item nav-link active text-dark xos-temblor">MaestrIas Oficiales en
-                    España</a>
-              
+                <a href="index.html" class="nav-item nav-link active text-dark xos-temblor">Home</a>
+                <a href="maestrias.html" class="nav-item nav-link active text-dark xos-temblor">Maestrías Oficiales en
+                    España</a>              
                 <a href="about.html" class="nav-item nav-link xos-temblor">¿Quiénes Somos?</a>
                 <a href="https://www.fercoadvancededucation.com/landing"
                     class="nav-item nav-link xos-temblor">Contáctos</a>
