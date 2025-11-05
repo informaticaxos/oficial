@@ -26,7 +26,7 @@ let COMPONENT_HEAD = () => {
 
 let COMPONENT_NAVBAR = () => {
   return `
-    <!-- Navbar Start -->
+    
     <nav class="navbar navbar-expand-lg bg-white text-light navbar-light shadow sticky-top p-0" id="home">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5 xos-temblor">
             <h2 class="m-0"><img width="40" alt="" id="logoBarra" /></h2>
@@ -44,11 +44,8 @@ let COMPONENT_NAVBAR = () => {
                 <a href="https://www.fercoadvancededucation.com/landing"
                     class="nav-item nav-link xos-temblor">Contáctos</a>
             </div>
-            <!--  <a href="" class="btn btn-dark py-4 px-lg-5 d-none d-lg-block">Join Now<
-                    class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
     </nav>
-    <!-- Navbar End -->
   `;
 };
 
