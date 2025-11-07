@@ -90,14 +90,15 @@ let COMPONENT_FOOTER = () => {
         <div class="container" id="contactos">
             <div class="copyright">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
                         &copy;
                         <a class="border-bottom" href="#"> fercoadvancededucation.com </a>, All Right Reserved.
                         Designed
                         By
                         <a class="border-bottom" href="https://htmlcodex.com">Informática XOS</a><br /><br />
                     </div>
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                    <div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
                          &copy;
                         <a class="border-bottom" href="#"> fercoadvancededucation.com </a>, All Right Reserved.
                         Designed
