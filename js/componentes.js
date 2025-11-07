@@ -1,5 +1,5 @@
 let COMPONENT_HEAD = () => {
-  return `c   
+    return `c   
     <title>FERCO Advanced Education</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
@@ -24,7 +24,7 @@ let COMPONENT_HEAD = () => {
 };
 
 let COMPONENT_NAVBAR = () => {
-  return `
+    return `
     <nav class="navbar navbar-expand-lg bg-white text-light navbar-light shadow sticky-top p-0" id="home">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5 xos-temblor">
             <h2 class="m-0"><img width="40" alt="" id="logoBarra" /></h2>
@@ -47,7 +47,7 @@ let COMPONENT_NAVBAR = () => {
 };
 
 let COMPONENT_FOOTER = () => {
-  return `
+    return `
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -98,12 +98,8 @@ let COMPONENT_FOOTER = () => {
                         <a class="border-bottom" href="https://htmlcodex.com">Informática XOS</a><br /><br />
                     </div>
 
-                    <div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
-                         &copy;
-                        <a class="border-bottom" href="#"> fercoadvancededucation.com </a>, All Right Reserved.
-                        Designed
-                        By
-                        <a class="border-bottom" href="https://htmlcodex.com">Informática XOS</a><br /><br />
+                    <div class="col-md-12 text-center text-md-start mb-3 mb-md-0"> 
+                        <a class="border-bottom" target="_blank" href="https://fercoadvancededucation.com/php-ferco-files-ws/frontend/">Gestión de Datos</a><br /><br />
                     </div>
                 </div>
             </div>
