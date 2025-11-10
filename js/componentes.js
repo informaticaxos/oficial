@@ -1,5 +1,5 @@
 let COMPONENT_HEAD = () => {
-    return `c   
+    return `   
     <title>FERCO Advanced Education</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
@@ -108,4 +108,6 @@ let COMPONENT_FOOTER = () => {
     <!-- Footer End -->
   `;
 };
+
+
 // document.getElementById('footer').innerHTML = COMPONENT_FOOTER();
