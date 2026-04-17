@@ -26,8 +26,11 @@ let COMPONENT_HEAD = () => {
 let COMPONENT_NAVBAR = () => {
     return `
     <nav class="navbar navbar-expand-lg bg-white text-light navbar-light shadow sticky-top p-0" id="home">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5 xos-temblor">
-            <h2 class="m-0"><img width="40" alt="" id="logoBarra" /></h2>
+        <a href="index.html" class="navbar-brand d-flex align-items-center gap-2 px-4 px-lg-5 xos-temblor" style="font-weight:700; font-size:1.18rem; letter-spacing:0.04em; color:#181d38;">
+            <span style="background: #fff; border-radius: 50%; width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; overflow: hidden; padding: 0; box-shadow:0 2px 8px rgba(24,29,56,0.10);">
+                <img src="./img/logos-ferco/logofull.png" alt="Logo FERCO" style="width: 32px; height: 32px; object-fit: contain; display: block;" />
+            </span>
+            FERCO ADVANCED EDUCATION
         </a>
         <button type="button" class="navbar-toggler me-4 " data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -35,11 +38,9 @@ let COMPONENT_NAVBAR = () => {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active text-dark xos-temblor">Home</a>
-                <a href="maestrias.html" class="nav-item nav-link active text-dark xos-temblor">Maestrías Oficiales en
-                    España</a>              
+                <a href="maestrias.html" class="nav-item nav-link active text-dark xos-temblor">Maestrías Oficiales en España</a>
                 <a href="about.html" class="nav-item nav-link xos-temblor">¿Quiénes Somos?</a>
-                <a href="https://www.fercoadvancededucation.com/landing"
-                    class="nav-item nav-link xos-temblor">Contáctos</a>
+                <a href="https://www.fercoadvancededucation.com/landing" class="nav-item nav-link xos-temblor">Contáctos</a>
             </div>
         </div>
     </nav>
@@ -47,66 +48,50 @@ let COMPONENT_NAVBAR = () => {
 };
 
 let COMPONENT_FOOTER = () => {
-    return `
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-12 col-md-6">
-                    <h4 class="text-white mb-3">Contactos</h4>
-                    <p class="mb-2">
-                        <i class="fa fa-map-marker-alt me-3"></i>Barcelona, España <br>
-                        <i class="fa fa-phone-alt me-3"></i><a href="tel:34654704710" target="_blank"
-                            class="text-light">+34 678 79 13 32</a>
-                    </p>
-                    <p class="mb-2">
-                    </p>
-                    <p class="mb-2">
-
-                        <i class="fa fa-map-marker-alt me-3"></i>Cuenca, Ecuador <br>
-                        <i class="fa fa-phone-alt me-3"></i><a href="tel:593995113549" target="_blank"
-                            class="text-light">+593 99 511 3549</a>
-                    </p>
-                    <p class="mb-2">
-                        <hr>
-                    </p>
-                    <p class="mb-2">
-                        <i class="fa fa-envelope me-3"></i>info.latinoamerica@fercoadvancededucation.com
-                    </p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social"
-                            href="https://www.instagram.com/fercoadvancededucation" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/fercoededucation/"
-                            target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social"
-                            href="https://api.whatsapp.com/send?phone=34678791332&text=." target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
+        return `
+        <!-- Footer Start -->
+        <footer class="bg-dark text-white mt-5 pt-5 pb-3 w-100" style="font-size:1.08rem; letter-spacing:0.01em;">
+            <div class="container-fluid px-4">
+                <div class="row align-items-center">
+                    <div class="col-md-7 mb-4 mb-md-0">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <span style="background: #fff; border-radius: 50%; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; overflow: hidden; padding: 0;">
+                                <img src="./img/logos-ferco/logofull.png" alt="Logo FERCO" style="width: 34px; height: 34px; object-fit: contain; display: block;" />
+                            </span>
+                            <span class="fw-bold" style="font-size:1.35rem; letter-spacing:0.04em;">FERCO Advanced Education</span>
+                        </div>
+                        <div class="mb-2" style="line-height:1.5;">
+                            Facilitamos oportunidades de formación académica internacional, representando universidades y asesorando sobre las mejores opciones educativas.
+                        </div>
+                        <div class="mb-2" style="line-height:1.5;">
+                            <span class="fw-bold">RUC Empresa:</span> <a href="https://srienlinea.sri.gob.ec/sri-en-linea/SriRucWeb/ConsultaRuc/Consultas/consultaRuc" class="text-white text-decoration-underline" target="_blank" title="Consulta nuestra empresa">0104655832001</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 text-md-end">
+                        <div class="mb-2" style="line-height:1.5;">
+                            <span class="fw-bold">Contacto:</span> <a href="mailto:info@fercoadvancededucation.com" class="text-white text-decoration-underline">info@fercoadvancededucation.com</a>
+                        </div>
+                        <div class="mb-2" style="line-height:1.5;">
+                            <span class="fw-bold">WhatsApp:</span> <a href="https://wa.me/34678791332?text=Hola!%20visitaba%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n!%0AMi%20nombre%20es%20:%20" class="text-white text-decoration-underline">+34 678 791 332</a>
+                        </div>
+                        <div class="mb-2" style="line-height:1.5;">
+                            <span class="fw-bold">Dirección:</span> Barcelona, España
+                        </div>
+                        <div class="mb-2" style="line-height:1.5;">
+                            <span class="fw-bold">Soporte:</span> <a href="https://fercoadvancededucation.com/php-ferco-files-ws/frontend/" class="text-white text-decoration-underline" target="_blank">Gestión de Datos</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container" id="contactos">
-            <div class="copyright">
+                <hr class="border-secondary my-4" />
                 <div class="row">
-                    <div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
-                        &copy;
-                        <a class="border-bottom" href="#"> fercoadvancededucation.com </a>, All Right Reserved.
-                        Designed
-                        By
-                        <a class="border-bottom" href="https://htmlcodex.com">Informática XOS</a><br /><br />
-                    </div>
-
-                    <div class="col-md-12 text-center text-md-start mb-3 mb-md-0"> 
-                        <a class="border-bottom" target="_blank" href="https://fercoadvancededucation.com/php-ferco-files-ws/frontend/">Gestión de Datos</a><br /><br />
+                    <div class="col-12 text-center" style="font-size:0.98rem; letter-spacing:0.01em;">
+                        &copy; ${new Date().getFullYear()} FERCO Advanced Education. Todos los derechos reservados.
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-  `;
+        </footer>
+        <!-- Footer End -->
+    `;
 };
 
 
